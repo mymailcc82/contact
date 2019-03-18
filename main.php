@@ -18,5 +18,15 @@
   function do_action(){
     display();
   }
+  function do_action_2(){
+    display_1();
+  }
+  function do_action_3(){
+    display_2();
+  }
+
+  function do_action_finish(){
+    display_finish();
+  }
 
 ?>
