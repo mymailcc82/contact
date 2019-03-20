@@ -53,7 +53,7 @@ color: #17bcdf;
 </ul>
 
 <div class="form-group">
-  <form method="post" action="/contact-step-2.php" name="myForm">
+  <form method="post" action="/contact/contact-step-2.php" name="myForm">
     <h3>メニューを選択してください。</h3>
     <h4>キャンペーンメニュー</h4>
     <div class="form-group">

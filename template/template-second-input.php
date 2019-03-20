@@ -78,7 +78,7 @@ color: #17bcdf;
 </div>
 <h3>メニュー・日時にお間違えがない事を確認のうえ、下記にお客様情報をご入力ください</h3>
 <div class="form-group">
-  <form method="post" action="/contact-confirm.php" name="myForm">
+  <form method="post" action="/contact/contact-confirm.php" name="myForm">
     <h3>お客様情報を入力してください</h3>
     <dl class="form-insert">
       <li>

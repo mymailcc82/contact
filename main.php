@@ -25,8 +25,9 @@
     display_2();
   }
 
-  function do_action_finish(){
-    display_finish();
-  }
+  //送信完了 contact-finishに下記関数を追加してください
+  do_action_finish();
+
+
 
 ?>

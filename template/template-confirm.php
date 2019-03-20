@@ -95,24 +95,24 @@ color: #17bcdf;
 </div>
 <h3>メニュー・日時・お客様情報に誤りがないでしょうか？</h3>
 <div class="form-group">
-  <form method="post" action="/contact-finish.php" name="myForm">
+  <form method="post" action="/contact/contact-finish.php" name="myForm">
     <h4>下記項目は非表示にします。</h4>
     <dl class="form-insert">
       <li>
         <span class="your-form">お名前</span>
-        <input type="hidden" name="name" class="form-control" velue="<?php echo $name;?>">
+        <input type="hidden" name="name" class="form-control" value="<?php echo $name;?>">
       </li>
       <li>
         <span class="your-form">メール</span>
-        <input type="hidden" name="mail" class="form-control" velue="<?php echo $mail;?>">
+        <input type="hidden" name="mail" class="form-control" value="<?php echo $mail;?>">
       </li>
       <li>
         <span class="your-form">電話番号※ハイフンなし</span>
-        <input type="hidden" name="tel" class="form-control" velue="<?php echo $tel;?>">
+        <input type="hidden" name="tel" class="form-control" value="<?php echo $tel;?>">
       </li>
       <li>
         <span class="your-form">その他</span>
-        <input type="hidden" name="info" class="form-control" velue="<?php echo $info;?>">
+        <input type="hidden" name="info" class="form-control" value="<?php echo $info;?>">
       </li>
 
       <li>

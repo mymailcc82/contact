@@ -1,0 +1,16 @@
+$template_name様のご予約内容
+
+ご予約のメニュー: $template_campagin_menu , $template_else_menu
+日時:   $template_reserve_day
+時間:   $template_reserve_time
+
+【お客様情報】
+お名前:   $template_name
+メールアドレス:   $template_mail
+電話番号:   $template_tel
+
+【その他お問い合わせ内容】
+$template_info
+
+
+---------以上------------
