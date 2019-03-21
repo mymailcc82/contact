@@ -134,9 +134,9 @@ color: #17bcdf;
 
             <h5>Remover</h5>
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU" />
+              <input type="checkbox" class="checkbox" name="menu" value="SHR 全身脱毛 A" />
               <span class="checkbox-icon"></span>
-              シーラインHIFU・・・￥12,800
+              SHR 全身脱毛 A・・・¥45,000
             </label>
             <div class="checkbox">
               <label>
@@ -147,22 +147,9 @@ color: #17bcdf;
             </div>
 
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU" />
+              <input type="checkbox" class="checkbox" name="menu" value="SHR 全身脱毛 B" />
               <span class="checkbox-icon"></span>
-              シーラインHIFU・・・￥12,800
-            </label>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" class="cs_checkbox" name="menu_2">
-                <span class="checkbox-icon"></span>
-               Checkbox
-              </label>
-            </div>
-
-            <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU" />
-              <span class="checkbox-icon"></span>
-              シーラインHIFU・・・￥12,800
+              SHR 全身脱毛 B・・・¥42,000
             </label>
             <div class="checkbox">
               <label>
