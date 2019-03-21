@@ -6,7 +6,7 @@ class GetInfomation{
     $get_infomation = array();
 
     //global $_POST["name"];
-
+    $request_data = $_SERVER["REQUEST_METHOD"];
     $name =$_POST["name"];
     $mail =$_POST["mail"];
     $tel =$_POST["tel"];
@@ -18,6 +18,8 @@ class GetInfomation{
     $campagin_menu = $_POST["campagin_menu"];
     $else_menu = $_POST["else_menu"];
 
+
+    $get_infomation['request_data'] = $request_data;
     $get_infomation['name'] = $name;
     $get_infomation['mail'] = $mail;
     $get_infomation['tel'] = $tel;

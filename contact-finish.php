@@ -3,7 +3,7 @@ header("Content-type: text/html; charset=UTF-8");
 mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 ?>
-<?php require_once ( dirname( __FILE__ ) . '/controller/contact.php' );?>
+<?php require_once ( dirname( __FILE__ ) . '/controller/controller-contact.php' );?>
 
 
 
