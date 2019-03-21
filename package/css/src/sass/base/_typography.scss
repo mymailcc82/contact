@@ -1,0 +1,46 @@
+html {
+  color: $base-font-color;
+  font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic','Yu Gothic UI','ＭＳ ゴシック','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,sans-serif;;
+  font-size: 62.5%;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic','Yu Gothic UI','ＭＳ ゴシック','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,sans-serif;
+  font-size: 2.0rem;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+}
+
+p {
+  margin: 0 0 $small-spacing;
+  line-height: 1.75;
+  font-size: 1.6rem;
+  letter-spacing: 0.025em;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+  font-size: 1.6rem;
+
+  &:hover {
+    color: shade($action-color, 25%);
+    opacity: 0.8;
+  }
+
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}

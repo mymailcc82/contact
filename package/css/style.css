@@ -1,0 +1,69 @@
+/* Theme Name: david */
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.contact {
+  border: 4px solid #dc6428;
+  border-radius: 20px;
+}
+
+.contact .contact__inner {
+  padding: 0px 30px 30px 30px;
+}
+
+.contact .contact-h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 0px 0px 30px;
+  color: #fff;
+  background-color: #dc6428;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.contact .contact-h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.contact .contact-h4 {
+  font-size: 18px;
+  text-align: left;
+}
+
+.contact .contact-step {
+  text-align: center;
+}
+
+.contact .contact-step li {
+  display: inline-block;
+  border: 1px solid #dc6428;
+  color: #dc6428;
+  padding: 10px 40px;
+  margin-right: 20px;
+}
+
+.contact .contact-step li:last-child {
+  margin-right: 0px;
+}
+
+.contact .contact-step .active {
+  border: 1px solid #dc6428;
+  background-color: #dc6428;
+  color: #fff;
+}
+
+.contact #accordion dt:hover {
+  cursor: pointer;
+}
+
+.contact #accordion dd {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

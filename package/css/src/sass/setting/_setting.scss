@@ -1,0 +1,12 @@
+//コンテンツ幅
+$content-width: 1000px;
+
+//maincolor
+$main-blue: #0a3d9a;
+
+//レスポンシブ
+$large: new-breakpoint(min-width 1030px 12);
+$middle-header: new-breakpoint(max-width 1149px 12);
+$middle: new-breakpoint(max-width 1029px 12);
+$middle-min: new-breakpoint(min-width 768px max-width 1029px 12);
+$mobile: new-breakpoint(max-width 767px 12);

@@ -1,0 +1,60 @@
+.contact{
+  border: 4px solid $main-color;
+  border-radius: 20px;
+
+  .contact__inner{
+    padding: 0px 30px 30px 30px;
+  }
+
+  .contact-h2{
+    font-size:30px;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0px 0px 30px;
+    color: #fff;
+    background-color: $main-color;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .contact-h3{
+    font-size:24px;
+    text-align: center;
+  }
+  .contact-h4{
+    font-size:18px;
+    text-align: left;
+  }
+
+  .contact-step{
+    text-align: center;
+    li{
+      display: inline-block;
+      border: 1px solid $main-color;
+      color: $main-color;
+      padding: 10px 40px;
+      margin-right: 20px;
+      &:last-child{
+        margin-right: 0px;
+      }
+    }
+
+    .active{
+      border: 1px solid $main-color;
+      background-color: $main-color;
+      color: #fff;
+    }
+
+  }
+
+  #accordion{
+    dt{
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    dd{
+      display: none;
+    }
+  }
+
+}
