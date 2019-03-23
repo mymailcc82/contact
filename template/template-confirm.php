@@ -9,7 +9,9 @@
   $reserve_time = $_POST["reserve_time"];
 
   $campagin_menu = $_POST["campagin_menu"];
-  $else_menu = $_POST["else_menu"];
+  $osusume_menu_arr = $_POST["else_menu"];
+
+
 
 
 
@@ -85,7 +87,12 @@ color: #17bcdf;
     <dt>その他</dt>
     <dd><?php echo $info;　?></dd>
     <dt>メニュー</dt>
-    <dd><?php echo $campagin_menu."&".$else_menu;　?></dd>
+    <dd>
+      <?php echo $campagin_menu."&";　?>
+      <?php foreach ($osusume_menu_arr as $osusume_menu_arr_key => $osusume_menu_arr_value): ?>
+        <?php echo $osusume_menu_arr_value;?>
+      <?php endforeach; ?>
+    </dd>
     <dt>日時</dt>
     <dd><?php echo $reserve_day."&".$reserve_time;　?></dd>
 
@@ -96,39 +103,32 @@ color: #17bcdf;
 <h3>メニュー・日時・お客様情報に誤りがないでしょうか？</h3>
 <div class="form-group">
   <form method="post" action="/contact/contact-finish.php" name="myForm">
-    <h4>下記項目は非表示にします。</h4>
     <dl class="form-insert">
       <li>
-        <span class="your-form">お名前</span>
         <input type="hidden" name="name" class="form-control" value="<?php echo $name;?>">
       </li>
       <li>
-        <span class="your-form">メール</span>
         <input type="hidden" name="mail" class="form-control" value="<?php echo $mail;?>">
       </li>
       <li>
-        <span class="your-form">電話番号※ハイフンなし</span>
         <input type="hidden" name="tel" class="form-control" value="<?php echo $tel;?>">
       </li>
       <li>
-        <span class="your-form">その他</span>
         <input type="hidden" name="info" class="form-control" value="<?php echo $info;?>">
       </li>
 
       <li>
-        <span class="your-form">メニュー</span>
         <input type="hidden" class="form-control" value="<?php echo $campagin_menu;?>" name="campagin_menu">
       </li>
       <li>
-        <span class="your-form">その他メニュー</span>
-        <input type="hidden" class="form-control" value="<?php echo $else_menu;?>" name="else_menu">
+        <?php foreach ($osusume_menu_arr as $osusume_menu_arr_key => $osusume_menu_arr_value): ?>
+          <input type="hidden" class="form-control" value="<?php echo $osusume_menu_arr_value;?>" name="osusume_menu[]">
+        <?php endforeach; ?>
       </li>
       <li>
-        <span class="your-form">予約日にち</span>
         <input type="hidden" class="form-control" value="<?php echo $reserve_day;?>" name="reserve_day">
       </li>
       <li>
-        <span class="your-form">予約時間</span>
         <input type="hidden" class="form-control" value="<?php echo $reserve_time;?>" name="reserve_time">
       </li>
 

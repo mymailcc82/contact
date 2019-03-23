@@ -78,7 +78,7 @@ color: #17bcdf;
           <dd>
             <h5>Facial</h5>
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU体験コース" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="シーラインHIFU体験コース" />
               <span class="checkbox-icon"></span>
               シーラインHIFU体験コース・・・￥12,800
             </label>
@@ -91,8 +91,10 @@ color: #17bcdf;
             </div>
 
 
+
+
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="ラバトロン体験コース" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="ラバトロン体験コース" />
               <span class="checkbox-icon"></span>
               ラバトロンリフトアップ体験コース・・・¥6,000
             </label>
@@ -107,7 +109,7 @@ color: #17bcdf;
             <h5>Body</h5>
 
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインボディ体験コース" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="シーラインボディ体験コース" />
               <span class="checkbox-icon"></span>
               シーラインボディ体験コース・・・￥19,800
             </label>
@@ -120,7 +122,7 @@ color: #17bcdf;
             </div>
 
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="ツインクライオ体験コース" />
+              <input type="checkbox" class="checkbox" name="mosusume_menu[]enu" value="ツインクライオ体験コース" />
               <span class="checkbox-icon"></span>
               ツインクライオ体験コース・・・￥9,800
             </label>
@@ -134,13 +136,13 @@ color: #17bcdf;
 
             <h5>Remover</h5>
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="SHR 全身脱毛 A" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="SHR 全身脱毛 A" />
               <span class="checkbox-icon"></span>
               SHR 全身脱毛 A・・・¥45,000
             </label>
             <div class="checkbox">
               <label>
-                <input type="checkbox" class="cs_checkbox" name="menu_2">
+                <input type="checkbox" class="cs_checkbox" name="osusume_menu[]">
                 <span class="checkbox-icon"></span>
                Checkbox
               </label>
@@ -289,7 +291,63 @@ color: #17bcdf;
 
         </dl>
 
-        <h3 class="contact-h3">日時を選択してください</h3>
+        <div class="contact-time">
+          <h3 class="contact-h3">日時を選択してください</h3>
+          <div class="calender-head cols">
+            <div class="col">
+              <span class="before-week arrow-small-button left bt">
+                <span class="tb-1">
+                  <span class="tb-2">前週</span>
+                </span>
+              </span>
+            </div>
+            <div class="col">
+              <div class="tb-1">
+                <div class="tb-2">
+                  <h2 id="target-date">4/5 〜</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <span class="next-week arrow-small-button bt right">
+                <span class="tb-1">
+                  <span class="tb-2">翌週</span>
+                </span>
+              </span>
+              <script>
+              $('.next-week').bind("click", function(){
+		            $('#fromDate').val($("#nextWeekDate").val());
+                search();
+              });
+              </script>
+            </div>
+          </div>
+          <table>
+            <thead>
+              <tr id="calender-month-header"><td colspan="3" align="center">3月</td><td colspan="4" align="center">4月</td></tr>
+              <tr>
+                <td style="background-color: rgb(255, 255, 255);"><p id="cal-head-col0" class="weekday">29<br>(金)</p></td>
+                <td style="background-color: rgb(217, 227, 236);"><p id="cal-head-col1" class="saturday">30<br>(土)</p></td>
+                <td style="background-color: rgb(238, 221, 217);"><p id="cal-head-col2" class="sunday">31<br>(日)</p></td>
+                <td style="background-color: rgb(255, 255, 255);"><p id="cal-head-col3" class="weekday">1<br>(月)</p></td>
+                <td style="background-color: rgb(255, 255, 255);"><p id="cal-head-col4" class="weekday">2<br>(火)</p></td>
+                <td style="background-color: rgb(255, 255, 255);"><p id="cal-head-col5" class="weekday">3<br>(水)</p></td>
+                <td style="background-color: rgb(255, 255, 255);"><p id="cal-head-col6" class="weekday">4<br>(木)</p></td>
+              </tr>
+            </thead>
+					<tbody id="cal-body">
+            <tr class="table-list">
+              <td id="#cal-td00" onclick="javascript:gotoInput('札幌店_2019-03-29_12:00_13:30');" class="bt ok_td"><div class="timeMark">12:00</div><div class="okMark">◎</div></td>
+              <td id="#cal-td10" onclick="javascript:gotoInput('札幌店_2019-03-30_10:00_11:30');" class="bt ok_td saturday"><div class="timeMark">10:00</div><div class="okMark">◎</div></td>
+              <td id="#cal-td20" onclick="javascript:gotoInput('札幌店_2019-03-31_10:00_11:30');" class="bt ok_td sunday"><div class="timeMark">10:00</div><div class="okMark">◎</div></td>
+              <td id="#cal-td30" onclick="javascript:gotoInput('札幌店_2019-04-01_12:00_13:30');" class="bt ok_td"><div class="timeMark">12:00</div><div class="okMark">◎</div></td>
+              <td id="#cal-td40" onclick="javascript:gotoInput('札幌店_2019-04-02_12:00_13:30');" class="bt ok_td"><div class="timeMark">12:00</div><div class="okMark">◎</div></td>
+              <td id="#cal-td50" onclick="javascript:gotoInput('札幌店_2019-04-03_12:00_13:30');" class="bt ok_td"><div class="timeMark">12:00</div><div class="okMark">◎</div></td>
+              <td id="#cal-td60" onclick="javascript:gotoInput('札幌店_2019-04-04_12:00_13:30');" class="bt ok_td"><div class="timeMark">12:00</div><div class="okMark">◎</div></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
 
       </div>
       <button type="submit" class="btn btn-warning">次へ</button>

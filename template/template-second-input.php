@@ -1,6 +1,7 @@
 <?php
   //その他のメニュー
-  $else_menu =$_POST["example"];
+  $else_menu_arr =$_POST["osusume_menu"];
+
 
 
   $campagin_menu =$_POST["menu"];
@@ -72,8 +73,13 @@ color: #17bcdf;
   <h3>入力情報</h3>
   <h4>
   <?php
-    echo $campagin_menu.$else_menu
+    echo $campagin_menu;
+    foreach ($else_menu_arr as $else_menu_arr_key => $else_menu_arr_value) {
+      echo ',';
+      echo $else_menu_arr_value;
+    }
   ?>
+
   </h4>
 </div>
 <h3>メニュー・日時にお間違えがない事を確認のうえ、下記にお客様情報をご入力ください</h3>
@@ -97,22 +103,22 @@ color: #17bcdf;
         <span class="your-form">その他</span>
         <textarea name="info" class="form-control"></textarea>
       </li>
-      <h4>下記項目は非表示にします。</h4>
+
+
+
       <li>
-        <span class="your-form">メニュー</span>
-        <input type="text" class="form-control" value="<?php echo $campagin_menu;?>" name="campagin_menu">
+        <input type="hidden" class="form-control" value="<?php echo $campagin_menu;?>" name="campagin_menu">
       </li>
       <li>
-        <span class="your-form">その他メニュー</span>
-        <input type="text" class="form-control" value="<?php echo $else_menu;?>" name="else_menu">
+        <?php foreach ($else_menu_arr as $else_menu_arr_key => $else_menu_arr_value): ?>
+          <input type="hidden" class="form-control" value="<?php echo $else_menu_arr_value;?>" name="else_menu[]">
+        <?php endforeach; ?>
       </li>
       <li>
-        <span class="your-form">予約日にち</span>
-        <input type="text" class="form-control" value="<?php echo $reserve_day;?>" name="reserve_day">
+        <input type="hidden" class="form-control" value="<?php echo $reserve_day;?>" name="reserve_day">
       </li>
       <li>
-        <span class="your-form">予約時間</span>
-        <input type="text" class="form-control" value="<?php echo $reserve_time;?>" name="reserve_time">
+        <input type="hidden" class="form-control" value="<?php echo $reserve_time;?>" name="reserve_time">
       </li>
 
     </dl>

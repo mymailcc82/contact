@@ -10,7 +10,6 @@
   }
 
   function insert_custom_infomation(){
-    echo "成功ステップ2";
 
     require_once ( dirname( __FILE__ ) . '../../template/template-second-input.php' );
   }
