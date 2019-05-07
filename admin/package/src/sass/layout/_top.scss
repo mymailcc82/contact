@@ -1,0 +1,129 @@
+
+header{
+  width: 100%;
+  height: 500px;
+  background-color: #333;
+  margin-bottom: 80px;
+}
+footer{
+  width: 100%;
+  height: 300px;
+  background-color: #aaa;
+  margin-top: 120px;
+}
+h2{
+  font-size: 30px;
+  color: #fff;
+}
+footer{
+
+}
+.content-width{
+  width: 1000px;
+  margin:  0 auto;
+  @include media($middle){
+    width: 100%;
+  }
+}
+.none{
+  display: none;
+}
+table{
+  width: 100%;
+}
+
+.btn_container{
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+#before_week_btn, #next_week_btn{
+  display: inline-block;
+  padding: 0.3em 3em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: .4s;
+  @include media($mobile){
+    font-size: 1.2rem;
+  }
+}
+#before_week_btn{
+  float: left;
+}
+ #next_week_btn{
+   float: right;
+ }
+ .calendar-table{
+   border: 1px solid #ddd;
+   padding: 20px;
+   tr{
+    font-size: 0px;
+    td{
+      border-right: 1px solid #aaa;
+      font-size: 14px;
+      text-align: center;
+      vertical-align: middle;
+      height: 60px;
+      font-weight: bold;
+      padding: 0px;
+      background-color: #faf6ec;
+      &:last-child{
+        border-right: 0px solid #aaa;
+      }
+      @include media($mobile){
+        font-size: 1.0rem;
+        width: 14%;
+        height: 45px;
+      }
+    }
+    .block{
+      border-left: 1px solid #ddd;
+      background-color: #fff;
+    }
+    .click{
+      color: #bb5555;
+      &:hover{
+        cursor: pointer;
+        background-color: #bb5555;
+        color: #fff;
+      }
+    }
+    .insert_format_table_month{
+      text-align: center;
+      border: none !important;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 15px 0px;
+      background-color: #fff;
+      @include media($mobile){
+        font-size: 1.0rem;
+      }
+    }
+    .saturday{
+      background-color: #d9e3ec;
+      p{
+        color: #5190d5;
+      }
+    }
+    .sunday{
+      background-color: #eeddd9;
+      p{
+        color: #bb5555;
+      }
+    }
+    .insert_format_table_day{
+      padding: 0px;
+      border-right: 1px solid #aaa;
+      &:last-child{
+        border-right: 0px solid #aaa;
+      }
+      p{
+        margin: 0px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// typography
+$font-gothic: '游ゴシック体', 'Yu Gothic', 'YuGothic','Yu Gothic UI','ＭＳ ゴシック','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,sans-serif;
+
+
+$font-mincho:'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN','メイリオ', Meiryo,sans-serif;
+
+$content-width: 980px;
+
+
+
+//colors
+$color-orange: #ff6d02;
+$color-blue: #0a3d9a;
+$color-blue-sub: #0080c0;
+$title-color: #94c0e3; //h2のタイトルとpageのボーダー
+$color-green: #22b0a9;
+
+
+$cat-blue-color: #5271ff;
+$cat-green-color: #43c785;
+$cat-red-color: #c21b26;
+
+
+
+
+
+
+$large: new-breakpoint(min-width 1010px 12);
+$middle: new-breakpoint(max-width 1009px 12);
+$middle-min: new-breakpoint(min-width 768px max-width 1009px 12);
+$mobile: new-breakpoint(max-width 767px 12);
+$mobile-small: new-breakpoint(max-width 341px 12);

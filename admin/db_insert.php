@@ -1,17 +1,17 @@
+<?php require_once ( dirname( __FILE__ ) . '/model/model-post-sql.php' );?>
 <?php
 header("Content-type: text/html; charset=UTF-8");
 mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 ?>
-<?php require_once ( dirname( __FILE__ ) . '/controller/controller-contact.php' );?>
 
 
 <!doctype html><html itemscope="" itemtype="http://schema.org/SearchResultsPage" lang="ja">
 <head>
-  <link rel="stylesheet" type="text/css" href="/contact/package/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" type="text/css" href="/contact/package/css/style.css">
+  <script src="/ajax/admin/package/js/admin.js"></script>
 </head>
+
+
 <style>
 header{
   width: 100%;
@@ -36,26 +36,34 @@ footer{
   width: 1000px;
   margin:  0 auto;;
 }
+.none{
+  display: none;
+}
+table{
+  width: 100%;
+  font-size: 0px;
+  border-collapse:collapse;
+}
+tr{
+  font-size: 0px;
+}
+.insert_format_table td{
+  border: 1px solid #aaa;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 16px;
+}
 </style>
 <header>
   <h2>ヘッダー</h2>
 </header>
 
 
-
-
 <main class="content-width">
-  <?php
-  insert_custom_infomation();
-  ?>
+<?php require_once ( dirname( __FILE__ ) . '/template/template-insert_format.php' );?>
 
 
 </main>
-
-
-
-
-
 
 
 

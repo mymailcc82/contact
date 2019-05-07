@@ -4,6 +4,17 @@
 
   .contact__inner{
     padding: 0px 30px 30px 30px;
+
+    ul{
+      padding: 0px;
+      li{
+        list-style: none;
+        margin-bottom: 15px;
+        &:last-child{
+          margin-bottom: 0px;
+        }
+      }
+    }
   }
 
   .contact-h2{
@@ -14,6 +25,7 @@
     color: #fff;
     background-color: $main-color;
     border-radius: 10px 10px 0px 0px;
+
   }
 
   .contact-h3{
@@ -27,6 +39,7 @@
 
   .contact-step{
     text-align: center;
+    margin-bottom: 40px;
     li{
       display: inline-block;
       border: 1px solid $main-color;

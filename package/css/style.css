@@ -16,6 +16,19 @@ html {
   padding: 0px 30px 30px 30px;
 }
 
+.contact .contact__inner ul {
+  padding: 0px;
+}
+
+.contact .contact__inner ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.contact .contact__inner ul li:last-child {
+  margin-bottom: 0px;
+}
+
 .contact .contact-h2 {
   font-size: 30px;
   text-align: center;
@@ -38,6 +51,7 @@ html {
 
 .contact .contact-step {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .contact .contact-step li {

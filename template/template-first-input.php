@@ -1,9 +1,5 @@
 
-<link rel="stylesheet" type="text/css" href="/contact/package/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-<link rel="stylesheet" type="text/css" href="/contact/package/css/style.css">
-<script type="text/javascript" src="/contact/package/js/jquery-2.1.3.js"></script>
-<script type="text/javascript" src="/contact/package/js/script.js"></script>
+
 
 <style>
 .radio {
@@ -54,7 +50,7 @@ color: #17bcdf;
     </ul>
 
     <div class="form-group" id="accordion">
-      <form method="post" action="/contact/contact-step-2.php" name="myForm">
+      <form method="post" action="/contact/contact-calendar.php" name="myForm">
         <h3 class="contact-h3">メニューを選択してください</h3>
         <dl class="form-group">
           <dt><h4 class="contact-h4">キャンペーンメニュー</h4></dt>
@@ -291,17 +287,9 @@ color: #17bcdf;
 
         </dl>
 
-        <div class="contact-time">
-          <h3 class="contact-h3">日時を選択してください</h3>
-          <div class="calender-head cols">
-          
-
-
-        </div>
-
-      </div>
-      <button type="submit" class="btn btn-warning">次へ</button>
-    </form>
+        <button type="submit" class="btn btn-warning">次へ</button>
+      </form>
+    </div>
   </div>
 
 </div>
