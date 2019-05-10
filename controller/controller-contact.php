@@ -15,8 +15,6 @@
   }
 
   function confirm_insert(){
-    echo "確認画面";
-
     require_once ( dirname( __FILE__ ) . '../../template/template-confirm.php' );
   }
 
@@ -42,7 +40,6 @@
     if(!$data_check -> check_request_get($get_infomation_arr)){
       //POSTデータがあることを確認
       if($data_check -> check_request_post($get_infomation_arr)){
-
         $send_mail = new SendMail;
         $send_mail_flg = $send_mail -> send_mail_to_myself($get_infomation_arr);
 

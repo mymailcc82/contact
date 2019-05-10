@@ -11,6 +11,8 @@ mb_internal_encoding("UTF-8");
   <link rel="stylesheet" type="text/css" href="/contact/package/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" type="text/css" href="/contact/package/css/style.css">
+  <script type="text/javascript" src="/contact/package/js/jquery-2.1.3.js"></script>
+  <script type="text/javascript" src="/contact/package/js/script.js"></script>
 </head>
 <style>
 header{

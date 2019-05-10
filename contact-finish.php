@@ -11,6 +11,8 @@ mb_internal_encoding("UTF-8");
 
 <!doctype html><html itemscope="" itemtype="http://schema.org/SearchResultsPage" lang="ja">
 <head>
+  <link rel="stylesheet" type="text/css" href="/contact/package/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/contact/package/css/style.css">
 </head>
 <style>
 header{

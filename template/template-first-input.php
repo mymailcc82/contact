@@ -50,13 +50,13 @@ color: #17bcdf;
     </ul>
 
     <div class="form-group" id="accordion">
-      <form method="post" action="/contact/contact-calendar.php" name="myForm">
+      <form method="post" action="/contact/contact-calendar.php" name="myForm" onSubmit="return checkFirst()">
         <h3 class="contact-h3">メニューを選択してください</h3>
         <dl class="form-group">
           <dt><h4 class="contact-h4">キャンペーンメニュー</h4></dt>
           <dd>
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="SHR全身脱毛D　1年コース" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="SHR全身脱毛D　1年コース" />
               <span class="checkbox-icon"></span>
               SHR 全身脱毛D　1年コース・・・¥168,000
             </label>
@@ -118,7 +118,7 @@ color: #17bcdf;
             </div>
 
             <label>
-              <input type="checkbox" class="checkbox" name="mosusume_menu[]enu" value="ツインクライオ体験コース" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="ツインクライオ体験コース" />
               <span class="checkbox-icon"></span>
               ツインクライオ体験コース・・・￥9,800
             </label>
@@ -145,7 +145,7 @@ color: #17bcdf;
             </div>
 
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="SHR 全身脱毛 B" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="SHR 全身脱毛 B" />
               <span class="checkbox-icon"></span>
               SHR 全身脱毛 B・・・¥42,000
             </label>
@@ -166,7 +166,7 @@ color: #17bcdf;
           <dd>
             <h5>Facial</h5>
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="シーラインHIFU" />
               <span class="checkbox-icon"></span>
               シーラインHIFU・・・￥12,800
             </label>
@@ -179,7 +179,7 @@ color: #17bcdf;
             </div>
 
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="シーラインHIFU" />
               <span class="checkbox-icon"></span>
               シーラインHIFU・・・￥12,800
             </label>
@@ -192,7 +192,7 @@ color: #17bcdf;
             </div>
 
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="シーラインHIFU" />
               <span class="checkbox-icon"></span>
               シーラインHIFU・・・￥12,800
             </label>
@@ -206,7 +206,7 @@ color: #17bcdf;
 
             <h5>Body</h5>
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="シーラインHIFU" />
               <span class="checkbox-icon"></span>
               シーラインHIFU・・・￥12,800
             </label>
@@ -219,7 +219,7 @@ color: #17bcdf;
             </div>
 
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="シーラインHIFU" />
               <span class="checkbox-icon"></span>
               シーラインHIFU・・・￥12,800
             </label>
@@ -232,7 +232,7 @@ color: #17bcdf;
             </div>
 
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="シーラインHIFU" />
               <span class="checkbox-icon"></span>
               シーラインHIFU・・・￥12,800
             </label>
@@ -246,7 +246,7 @@ color: #17bcdf;
 
             <h5>Remover</h5>
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="シーラインHIFU" />
               <span class="checkbox-icon"></span>
               シーラインHIFU・・・￥12,800
             </label>
@@ -259,7 +259,7 @@ color: #17bcdf;
             </div>
 
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="シーラインHIFU" />
               <span class="checkbox-icon"></span>
               シーラインHIFU・・・￥12,800
             </label>
@@ -272,7 +272,7 @@ color: #17bcdf;
             </div>
 
             <label>
-              <input type="checkbox" class="checkbox" name="menu" value="シーラインHIFU" />
+              <input type="checkbox" class="checkbox" name="osusume_menu[]" value="シーラインHIFU" />
               <span class="checkbox-icon"></span>
               シーラインHIFU・・・￥12,800
             </label>
@@ -286,8 +286,9 @@ color: #17bcdf;
           </dd>
 
         </dl>
-
-        <button type="submit" class="btn btn-warning">次へ</button>
+        <div class="txt-center">
+          <button type="submit" class="btn btn-warning">次へ</button>
+        </div>
       </form>
     </div>
   </div>

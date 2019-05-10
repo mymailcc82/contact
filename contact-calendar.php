@@ -5,7 +5,9 @@ mb_internal_encoding("UTF-8");
 date_default_timezone_set('Asia/Tokyo');
 
 $else_menu_arr =$_POST["osusume_menu"];
-$campagin_menu =$_POST["menu"];
+
+
+
 
 
 ?>
@@ -45,6 +47,9 @@ $campagin_menu =$_POST["menu"];
       <li>お客様情報のご入力</li>
       <li>お客様情報のご確認</li>
     </ul>
+    <h4 class="txt-center">
+      希望日時を選択してください。
+    </h4>
 
     <div class="btn_container">
       <input type="button" id="before_week_btn" value="前週">
@@ -59,13 +64,15 @@ $campagin_menu =$_POST["menu"];
       <input type="hidden" id = "now_time" name="now_time" value="">
       <input type="hidden" id = "next_week" name="next_week" value="">
       <input type="hidden" id = "before_week" name="before_week" value="">
-      <input type="hidden" class="form-control" value="<?php echo $campagin_menu;?>" name="campagin_menu">
       <?php foreach ($else_menu_arr as $else_menu_arr_key => $else_menu_arr_value): ?>
         <input type="hidden" class="form-control" value="<?php echo $else_menu_arr_value;?>" name="else_menu[]">
       <?php endforeach; ?>
 
       <div id="calendar"></div>
     </form>
+    <div class="txt-center">
+      <a href="#" onClick="history.back(); return false;" class="btn btn-warning">戻る</a>
+    </div>
   </div>
 </div>
 
