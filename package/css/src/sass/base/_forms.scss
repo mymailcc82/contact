@@ -41,14 +41,12 @@ textarea {
   width: 100%;
 
   &:hover {
-    border-color: shade($base-border-color, 100%);
+    border-color: shade($base-border-color, 20%);
   }
 
   &:focus {
-    //border-color: $action-color;
-    //border-color: $action-color;
-    border-color:#3b9ded;
-    //box-shadow: $_form-box-shadow-focus;
+    border-color: $action-color;
+    box-shadow: $_form-box-shadow-focus;
     outline: none;
   }
 

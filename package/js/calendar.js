@@ -7,7 +7,7 @@ class Calendar{
   constructor(){
     this.COUNT_DAY = 7; //一週間なら7を入力
     this.dayOfWeekStr = [ "日", "月", "火", "水", "木", "金", "土" ];  //数値を曜日に変更に使用
-    this.Reseve_Time_Name_Arr = ['10:00', '11:30', '1300', '14:30', '16:00', '17:30', '19:00', '20:30'];　//tableのtdで表示される時間
+    this.Reseve_Time_Name_Arr = ['10:00', '11:30', '13:00', '14:30', '16:00', '17:30', '19:00', '20:30'];　//tableのtdで表示される時間
     this.Reseve_Time_Key_Json_Arr = ['t1000', 't1130', 't1300', 't1430', 't1600', 't1730', 't1900', 't2030'];　//jsonで取得したデータのkey名を格納
   }
 

@@ -2,6 +2,9 @@
   border: 4px solid $main-color;
   border-radius: 20px;
 
+  .form-control{
+    margin: 0px;
+  }
   h3{
     color: #777;
   }
@@ -89,6 +92,7 @@
 
 .insert-infomation{
   @include clearfix;
+  margin-bottom: 30px;
   dt{
     width: 20%;
     float: left;

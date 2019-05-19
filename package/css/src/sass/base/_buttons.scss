@@ -23,13 +23,13 @@ $_button-background-color-hover: shade($action-color, 20%);
   white-space: nowrap;
 
   &:hover {
-    background-color: $_button-background-color-hover;
-    color: contrast-switch($_button-background-color-hover);
+    //background-color: $_button-background-color-hover;
+    //color: contrast-switch($_button-background-color-hover);
   }
 
   &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
+    //outline: $focus-outline;
+    //outline-offset: $focus-outline-offset;
   }
 
   &:disabled {

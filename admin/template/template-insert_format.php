@@ -3,10 +3,8 @@
 ini_set('display_errors', 0);
 
 //dbデータベース
-  $user = 'root';
-  $passward = 'root';
-  $host = 'localhost';
-  $dbname = 'mysql';
+
+  require_once ( dirname( __FILE__ ) . '../../setting.php' );
 
 
 
@@ -15,19 +13,19 @@ ini_set('display_errors', 0);
     // MySQLへの接続
     $dbh = new mysqli($host, $user, $passward, $dbname);
     // 接続を使用する
-    $sql = "SHOW TABLES LIKE 'test_ajax'";
+    $sql = "SHOW TABLES LIKE '".$table_name."'";
     $show_tables = $dbh->query($sql);
 
 
     //table作成
     if (!$show_tables->num_rows) {
-      $sql_2 = 'CREATE TABLE test_ajax(
+      $sql_2 = "CREATE TABLE ".$table_name."(
         id INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
         pure_key TEXT,
         format_time TIMESTAMP default CURRENT_TIMESTAMP,
         modify_time TIMESTAMP default CURRENT_TIMESTAMP,
         status INT(11)
-      )';
+      )";
 
       $dbh->set_charset('utf8');
       $dbh->query($sql_2);
@@ -41,9 +39,7 @@ ini_set('display_errors', 0);
     // MySQLへの接続
     $dbh = new mysqli($host, $user, $passward, $dbname);
     // 接続を使用する
-    $sql = "delete from test_ajax where format_time < '". $startDate. "'";
-    //$sql = "select * from test_ajax where format_time < '". $startDate. "'";
-    //echo $sql;
+    $sql = "delete from ".$table_name." where format_time < '". $startDate. "'";
     $dbh->query($sql);
     //var_dump($test_22);
 
@@ -81,7 +77,7 @@ try {
   // MySQLへの接続
   $dbh = new mysqli($host, $user, $passward, $dbname);
   // 接続を使用する
-  $sql = 'SELECT * from test_ajax';
+  $sql = 'SELECT * from '.$table_name;
   $data_base_obj = $dbh->query($sql);
 } catch (PDOException $e) { // PDOExceptionをキャッチする
   print "エラー!: " . $e->getMessage() . "<br/gt;";

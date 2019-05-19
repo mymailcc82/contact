@@ -6,10 +6,7 @@
 
 
   //dbデータベース
-  $user = 'root';
-  $passward = 'root';
-  $host = 'localhost';
-  $dbname = 'mysql';
+  require_once ( dirname( __FILE__ ) . '../../setting.php' );
 
   //日時を取得　例)2019/03/25/
   $format_time = '';
@@ -20,7 +17,7 @@
     // MySQLへの接続
     $dbh = new mysqli($host, $user, $passward, $dbname);
     // 接続を使用する
-    $sql = 'SELECT * from test_ajax';
+    $sql = 'SELECT * from '.$table_name;
     $data_base_obj = $dbh->query($sql);
   } catch (PDOException $e) { // PDOExceptionをキャッチする
     print "エラー!: " . $e->getMessage() . "<br/gt;";
