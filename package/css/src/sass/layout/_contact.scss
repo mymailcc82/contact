@@ -2,6 +2,11 @@
   border: 4px solid $main-color;
   border-radius: 20px;
 
+  label{
+    display: inline-block;
+    margin-right: 5px;
+  }
+
   .form-control{
     margin: 0px;
   }
@@ -31,7 +36,7 @@
   }
 
   .contact__inner{
-    padding: 0px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
 
     ul{
       padding: 0px;

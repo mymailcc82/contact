@@ -14,13 +14,13 @@ $else_menu_arr =$_POST["osusume_menu"];
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/ja.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="/contact/package/js/calendar.js"></script>
-  <script src="/contact/package/js/script.js"></script>
+  <script src="<?php echo $DOMAIN_URL;?>/contact/package/js/calendar.js"></script>
+  <script src="<?php echo $DOMAIN_URL;?>/contact/package/js/script.js"></script>
 
-  
-  <link rel="stylesheet" type="text/css" href="/contact/package/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="<?php echo $DOMAIN_URL;?>/contact/package/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" type="text/css" href="/contact/package/css/style.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $DOMAIN_URL;?>/contact/package/css/style.css">
 </head>
 
 <header>

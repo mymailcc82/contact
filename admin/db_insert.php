@@ -8,7 +8,7 @@ mb_internal_encoding("UTF-8");
 
 <!doctype html><html itemscope="" itemtype="http://schema.org/SearchResultsPage" lang="ja">
 <head>
-  <script src="/ajax/admin/package/js/admin.js"></script>
+  <script src="<?php echo $DOMAIN_URL;?>/contact/admin/package/js/admin.js"></script>
 </head>
 
 

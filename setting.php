@@ -1,6 +1,9 @@
 <?php
   //情報の設定
 
+  $DOMAIN_URL = 'http://localhost:8888';
+  //$DOMAIN_URL = 'http://highneeds-dev.work';
+
   //自分のメールアドレス
   $MY_MAILADORESS = 'mymailcc82@icloud.com';
 

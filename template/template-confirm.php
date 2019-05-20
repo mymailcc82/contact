@@ -54,7 +54,7 @@
          } ?>
        </dd>
        <dt>日時</dt>
-       <dd><?php echo $reserve_day.$reserve_time;　?></dd>
+       <dd><?php echo $reserve_day.$reserve_time;?></dd>
 
 
      </dl>

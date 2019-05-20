@@ -1,3 +1,4 @@
+<?php require( dirname( __FILE__ ) . '../../setting.php' );?>
 <div class="contact">
   <div class="contact__inner">
     <h1>ご予約完了画面</h1>
@@ -12,5 +13,6 @@
 
       ご予約いただいた内容につきましては、近日中にお返事させていただきます.
     </p>
+    <a href="<?php echo $DOMAIN_URL;?>" class="btn btn-warning">戻る</a>
   </div>
 </div>

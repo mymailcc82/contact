@@ -55,18 +55,25 @@ if($_SERVER["REQUEST_METHOD"]=='POST'){
 
         //検索
         $sql = 'SELECT COUNT(*) FROM '.$table_name.' where pure_key = '.$serach_pure_key;
+
         $mysqli->set_charset('utf8');
         $isset_pure_key = $mysqli->query($sql);
 
         //すでにデータがあるか $isset_pure_key_arr[0][0] 　true:1 false:0
-        $isset_pure_key_arr = $isset_pure_key->fetch_all();
-        if ($isset_pure_key_arr[0][0]) {
-          $sql = "UPDATE ".$table_name." SET status =".$status.",modify_time = ". $modify_time. " WHERE ".$table_name.".pure_key =".$serach_pure_key ;
+        try{
+          $isset_pure_key_arr = $isset_pure_key->fetch_assoc();
+          if ($isset_pure_key_arr[0][0]) {
+            $sql = "UPDATE ".$table_name." SET status =".$status.",modify_time = ". $modify_time. " WHERE ".$table_name.".pure_key =".$serach_pure_key ;
 
-        }else{
+          }else{
+            $sql = "INSERT INTO ".$table_name." (id, pure_key, format_time, modify_time, status) VALUES (NULL, ". $serach_pure_key. ",". $format_time. ",".$modify_time . ",". $status. ")";
+          }
+          $mysqli->query($sql);
+        } catch ( Exception $ex ) {
           $sql = "INSERT INTO ".$table_name." (id, pure_key, format_time, modify_time, status) VALUES (NULL, ". $serach_pure_key. ",". $format_time. ",".$modify_time . ",". $status. ")";
+          $mysqli->query($sql);
         }
-        $mysqli->query($sql);
+
       }
     }
   }catch (PDOException $e) { // PDOExceptionをキャッチする
