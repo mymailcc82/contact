@@ -2,10 +2,10 @@
   //情報の設定
 
   $DOMAIN_URL = 'http://localhost:8888';
-  //$DOMAIN_URL = 'http://highneeds-dev.work';
+  
 
   //自分のメールアドレス
-  $MY_MAILADORESS = 'mymailcc82@icloud.com';
+  $MY_MAILADORESS = '';
 
   //自分に送るメールタイトルのファイル名
   $TEMPLATE_SEND_MY_TITLE = '././template/template-send_mail_to_myself_title.txt';
@@ -15,7 +15,7 @@
 
   //header関数でlocationに設定するURL。
   $LOCATION_URL ='http://localhost:8888/contact/contact-finish.php';
-  //$LOCATION_URL ='http://highneeds-dev.work/contact/contact-finish.php';
+
 
   $GET_DATA_FLG = 'flg';
 
